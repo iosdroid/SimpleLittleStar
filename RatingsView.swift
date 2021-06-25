@@ -1,8 +1,10 @@
 struct RatingsView: View {
     
+    // Set these parameters in your call.
+    
     @Binding var rating: Int    // Sets the rating to a state variable.
-    @Binding var starSize: CGFloat // The size of the stars.
-    @Binding var disabled: Bool // If set to 'true' the rating is not editable so you can use the view to just display results.
+    var starSize: CGFloat // The size of the stars.
+    var disabled: Bool // If set to 'true' the rating is not editable so you can use the view to just display results.
     var starColor: Color // Sets the fill color of the stars.
     
     var body: some View {
